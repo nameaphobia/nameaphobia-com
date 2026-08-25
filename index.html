@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <title>NAMEAPHOBIA — New Phobia Unlocked.</title>
+  <meta name="description" content="Name new phobias. New phobia unlocked.">
+
+  <style>
+    :root {
+      --black: #000;
+      --red: #ff1010;
+      --white: #fff;
+      --page-width: 1400px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      background: var(--black);
+    }
+
+    body {
+      color: var(--white);
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      justify-content: center;
+    }
+
+    main {
+      width: min(100%, var(--page-width));
+      min-height: 100vh;
+      padding: clamp(20px, 4vw, 56px) clamp(16px, 4vw, 48px) 72px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .eyes {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto clamp(28px, 5vw, 64px);
+    }
+
+    .eyes img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .brand {
+      width: 100%;
+      max-width: 1200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .logo {
+      width: min(100%, 1100px);
+      height: auto;
+      display: block;
+    }
+
+    .tagline {
+      margin: clamp(22px, 3vw, 36px) 0 0;
+      font-size: clamp(1.25rem, 3vw, 2.25rem);
+      line-height: 1.1;
+      font-weight: 900;
+      letter-spacing: 0.02em;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        padding-top: 12px;
+      }
+
+      .eyes {
+        margin-bottom: 0px;
+        margin-top: 50px;
+      }
+
+      .tagline {
+        margin-top: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <section class="eyes" aria-label="NAMEAPHOBIA eyes">
+      <img src="nameaphobia-eyes-cropped.png" alt="Horrified bloodshot anime eyes">
+    </section>
+
+    <section class="brand" aria-label="NAMEAPHOBIA">
+      <img
+        class="logo"
+        src="nameaphobia-logo-red.png"
+        alt="NAMEAPHOBIA"
+      >
+      <p class="tagline">@newphobiaunlocked</p>
+    </section>
+  </main>
+</body>
+</html>
